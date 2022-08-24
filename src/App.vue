@@ -1,28 +1,38 @@
+<!--Uso i componenti creati richiamandoli nel div id="app"-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyHeader/>
+    <MyMain/>
+    <MyFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//importo i componenti creati
+import MyHeader from './components/MyHeader.vue'
+import MyMain   from './components/MyMain.vue'
+import MyFooter from './components/MyFooter.vue'
 
+
+//registro i componenti
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyHeader,
+    MyMain,
+    MyFooter,
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /*font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px;*/
+  background: blueviolet;
 }
 </style>
