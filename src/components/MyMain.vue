@@ -1,7 +1,7 @@
 
 <!--creo il componente Main-->
 <template>
-    <section>
+    <section class="main">
         <h1>My MAIN</h1>
         <img src="@/assets/img/buy-comics-digital-comics.png" alt=""/>
         <img src="@/assets/img/buy-comics-merchandise.png" alt=""/>
@@ -22,6 +22,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+    .main{
+        height: 80px;
+        width: 80px;
+        border: solid 2px red;
+    }
+    img{
+        width: 100%;
+    }
 </style>

@@ -75,5 +75,27 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+    header{
+         border : 2px solid black;
+         display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-wrap: wrap;  
+      ul{
+        
+      display:flex; 
+      
+
+      li{
+        padding: 1rem; 
+          
+      }
+      
+      }
+      
+
+    }
+
+
 </style>

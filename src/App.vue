@@ -33,6 +33,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;*/
+  width: 90vw;
+  margin: auto;
+  height: 100vh;
   
 }
   @import "./styles/general.scss"
