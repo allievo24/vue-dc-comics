@@ -25,8 +25,10 @@ export default {
 <style lang="scss">
     .main{
         height: 80px;
-        width: 80px;
+        width: 100%;
         border: solid 2px red;
+        margin-bottom: 20rem;
+        display: flex;
     }
     img{
         width: 100%;
