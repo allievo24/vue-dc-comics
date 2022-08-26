@@ -16,6 +16,7 @@
 <script>
 export default {
   name: "MyHeader",
+  
   data() {
     return {
       links: [
@@ -81,7 +82,8 @@ export default {
          display: flex;
            align-items: center;
            justify-content: space-between;
-           flex-wrap: wrap;  
+           flex-wrap: wrap;
+            
       ul{
         
         display:flex; 

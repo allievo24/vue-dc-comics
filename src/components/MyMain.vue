@@ -28,9 +28,12 @@ export default {
         width: 100%;
         border: solid 2px red;
         display: flex;
+        background-color: $back_main_color ;
     img{
         width: 100%;
         object-fit: contain;        
     }
    } 
+   @import "./styles/var.scss"
+
 </style>

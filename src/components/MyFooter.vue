@@ -19,62 +19,18 @@ export default {
   components: {
     FooterLinks,
   },
-  data() {
-    return {
-      comicslinks: [
-        {
-          text: "CHARACTERS",
-          url: "#",
-        },
-        {
-          text: "COMICS",
-          url: "#",
-        },
-        {
-          text: "MOVIES",
-          url: "#",
-        },
-        {
-          text: "TV",
-          url: "#",
-        },
-        {
-          text: "GAMES",
-          url: "#",
-        },
-        {
-          text: "COLLECTIBLES",
-          url: "#",
-        },
-        {
-          text: "VIDEOS",
-          url: "#",
-        },
-        {
-          text: "FANS",
-          url: "#",
-        },
-        {
-          text: "NEWS",
-          url: "#",
-        },
-      ],
-    };
-  },
-};
+}
 </script>
  
  <style lang="scss">
   footer{
     border: solid 2px blue;
+    background-image: url("@/assets/img/footer-bg.jpg");
+
   }
   .FooterBottom{
     height: 80px;
     width: 100%;
     border : solid 2px black;
   }
-  .FooterTop{
-   background-image: url("@/assets/img/footer-bg.jpg");
-  }
-
 </style>

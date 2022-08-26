@@ -16,8 +16,49 @@ export default {
     props:{
         titolo: String,
         links: Array,
-    }
-
+    },
+    data() {
+    return {
+      comicslinks: [
+        {
+          text: "CHARACTERS",
+          url: "#",
+        },
+        {
+          text: "COMICS",
+          url: "#",
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+        },
+        {
+          text: "TV",
+          url: "#",
+        },
+        {
+          text: "GAMES",
+          url: "#",
+        },
+        {
+          text: "COLLECTIBLES",
+          url: "#",
+        },
+        {
+          text: "VIDEOS",
+          url: "#",
+        },
+        {
+          text: "FANS",
+          url: "#",
+        },
+        {
+          text: "NEWS",
+          url: "#",
+        },
+      ],
+    };
+  },
 }
 </script>
 
