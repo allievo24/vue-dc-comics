@@ -27,10 +27,10 @@ export default {
         height: 80px;
         width: 100%;
         border: solid 2px red;
-        margin-bottom: 20rem;
         display: flex;
-    }
     img{
         width: 100%;
+        object-fit: contain;        
     }
+   } 
 </style>

@@ -1,49 +1,80 @@
  <!--creo il componente Footer-->
  
  <template>
-    <footer>
-        <h4>DC COMICS</h4>
-        <ul>
-            <li>
-                <a href="#">Characters</a>
-            </li>
-        </ul>
-        <h4>DC</h4>
-        <ul>
-            <li>
-                <a href="#">Terms Of Use</a>
-            </li>
-        </ul>
-        <h4>SITES</h4>
-        <ul>
-            <li>
-                <a href="#">DC</a>
-            </li>
-        </ul>
-        <h4>SHOP</h4>
-        <ul>
-            <li>
-                <a href="#">Shop DC</a>
-            </li>
-        </ul>
-
-
-
-
-       
+  <footer>
+    <div class="FooterTop">
+      <FooterLinks :titolo="'DC-COMIC'" :links="comicslinks"/>
+    </div>
+    <div class="FooterBottom">
         <h1>MyFooter</h1>
-    </footer>
+    </div>
     
-   
- </template>
+  </footer>
+</template>
  
  <script>
- export default {
-    name:'MyFooter'
+import FooterLinks from './FooterLinks.vue';
+export default {
+  name: "MyFooter",
+  components: {
+    FooterLinks,
+  },
+  data() {
+    return {
+      comicslinks: [
+        {
+          text: "CHARACTERS",
+          url: "#",
+        },
+        {
+          text: "COMICS",
+          url: "#",
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+        },
+        {
+          text: "TV",
+          url: "#",
+        },
+        {
+          text: "GAMES",
+          url: "#",
+        },
+        {
+          text: "COLLECTIBLES",
+          url: "#",
+        },
+        {
+          text: "VIDEOS",
+          url: "#",
+        },
+        {
+          text: "FANS",
+          url: "#",
+        },
+        {
+          text: "NEWS",
+          url: "#",
+        },
+      ],
+    };
+  },
+};
+</script>
  
- }
- </script>
- 
- <style>
- 
- </style>
+ <style lang="scss">
+  footer{
+    border: solid 2px blue;
+  }
+  .FooterBottom{
+    height: 80px;
+    width: 100%;
+    border : solid 2px black;
+  }
+  .FooterTop{
+   background-image: url("../assets/img/footer-bg.jpg");
+  }
+
+</style>

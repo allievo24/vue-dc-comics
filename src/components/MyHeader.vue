@@ -84,11 +84,17 @@ export default {
            flex-wrap: wrap;  
       ul{
         
-      display:flex; 
+        display:flex; 
+        list-style: none;
       
 
       li{
         padding: 1rem; 
+        
+        a{
+          text-decoration: none;
+
+        }
           
       }
       
