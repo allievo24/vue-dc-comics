@@ -2,8 +2,8 @@
   <div class="linkfooter">
     <h4>{{titolo}}</h4>
         <ul>
-            <li>
-                <a href="#">Characters</a>
+            <li v-for="(link , index) in comicslinks " :key="index" >
+                <a :href="link.url">{{link.text}}</a>
             </li>
         </ul>
   </div>

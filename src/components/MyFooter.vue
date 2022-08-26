@@ -3,7 +3,7 @@
  <template>
   <footer>
     <div class="FooterTop">
-      <FooterLinks :titolo="'DC-COMIC'" :links="comicslinks"/>
+      <FooterLinks   :titolo="'DC COMICS'" />
     </div>
     <div class="FooterBottom">
         <h1>MyFooter</h1>
@@ -13,7 +13,7 @@
 </template>
  
  <script>
-import FooterLinks from './FooterLinks.vue';
+import FooterLinks from './FooterLinks';
 export default {
   name: "MyFooter",
   components: {
@@ -74,7 +74,7 @@ export default {
     border : solid 2px black;
   }
   .FooterTop{
-   background-image: url("../assets/img/footer-bg.jpg");
+   background-image: url("@/assets/img/footer-bg.jpg");
   }
 
 </style>
