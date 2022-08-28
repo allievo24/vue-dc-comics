@@ -1,13 +1,15 @@
 <template>
-  <div class="linkfooter">
-    <h4>{{ titolo }}</h4>
-    <ul>
-      <li v-for="(link, index) in links" :key="index">
-        <a :href="link.url">{{ link.text }}</a>
-      </li>
-    </ul>
-   
-  </div>
+  
+    <div class="linkfooter">
+        <h4>{{ titolo }}</h4>
+        <ul>
+        <li v-for="(link, index) in links" :key="index">
+            <a :href="link.url">{{ link.text }}</a>
+        </li>
+        </ul>
+    </div>
+
+  
 </template>
 
 <script>
@@ -23,8 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
+    
    .linkfooter{
-       
+        width: calc(100% / 3); 
         border:solid 2px yellow;
    }
   li{

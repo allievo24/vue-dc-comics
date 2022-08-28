@@ -3,15 +3,27 @@
  <template>
   <footer>
     <div class="FooterTop">
-      <FooterLinks   :titolo="'DC CoMICS'" :links="comicslinks"/>
-      <FooterLinks   :titolo="'DC'" :links="DcLinks" />
-
-
+      <div class="links">
+        <FooterLinks :titolo="'DC COMICS'" :links="comicslinks" />
+        <FooterLinks :titolo="'DC'" :links="DcLinks" />
+        <FooterLinks :titolo="'SITES'" :links="siteslinks" />
+        <FooterLinks :titolo="'SHOP'" :links="shoplinks" />
+      </div>
+        <img src="@/assets/img/dc-logo-bg.png" alt="" />
+      <div class="img">
+       
+      </div>
     </div>
+
     <div class="FooterBottom">
-        <h1>MyFooter</h1>
+      <div class="botton">
+        <a href="#">SIGN-UP NOW</a>
+      </div>
+      <div class="soscial">
+        <h4>FOLLOW</h4>
+        <img src="@/assets/img/footer-facebook.png" alt="" />
+      </div>
     </div>
-    
   </footer>
 </template>
  
@@ -19,13 +31,13 @@
 
 
  <script>
-import FooterLinks from './FooterLinks';
+import FooterLinks from "./FooterLinks";
 export default {
   name: "MyFooter",
   components: {
-    FooterLinks
+    FooterLinks,
   },
-   data() {
+  data() {
     return {
       comicslinks: [
         {
@@ -65,56 +77,83 @@ export default {
           url: "#",
         },
       ],
- DcLinks: [
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-
-        ]
-
-
-
-
+      DcLinks: [
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+      ],
+      siteslinks: [
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+      ],
+      shoplinks: [
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+        {
+          text: "Termes of User",
+          url: "#",
+        },
+      ],
     };
   },
-}
+};
 </script>
  
 
@@ -128,22 +167,48 @@ export default {
 
 
  <style lang="scss">
-  
-  footer{
+footer {
+  border: solid 2px blue;
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    padding: 10px;
+  }
+
+  .links {
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
-    border: solid 2px blue;
-    background-image: url("@/assets/img/footer-bg.jpg");
-    a {
-      text-decoration: none;
-    }
-    h4{
-      padding: 10px;
-    }
+    border: solid 4px rgb(179, 13, 13);
   }
-  .FooterBottom{
-    height: 80px;
+}
+.FooterBottom {
+  padding: 1rem;
+  background-color: #303030;
+  border: solid 4px rgb(179, 13, 13);
+  a{
+   
+      border: solid 2px #0282F9;
+      padding: 0.5rem; 
+  
     
-    border : solid 2px rgb(179, 13, 13);
   }
+}
+.FooterTop {
+  display: flex;
+  border: solid 2px rgb(68, 255, 0);
+  background-image: url("@/assets/img/footer-bg.jpg");
+  //background-repeat: no-repeat;
+  //object-fit: cover;
+  
+    img {
+      width: 40%;
+      margin-left: 6rem;
+
+    }
+  
+}
 </style>
