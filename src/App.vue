@@ -35,7 +35,7 @@ export default {
   margin-top: 60px;*/
   width: 90vw;
   margin: auto;
-  height: 100vh;
+  
   
 }
   @import "./styles/general.scss"

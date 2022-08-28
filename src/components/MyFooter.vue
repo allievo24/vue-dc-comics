@@ -3,7 +3,10 @@
  <template>
   <footer>
     <div class="FooterTop">
-      <FooterLinks   :titolo="'DC COMICS'" />
+      <FooterLinks   :titolo="'DC CoMICS'" :comicslinks="comicslinks"  />
+      <FooterLinks   :titolo="'DC'" :DcLinks="DcLinks"/>
+
+
     </div>
     <div class="FooterBottom">
         <h1>MyFooter</h1>

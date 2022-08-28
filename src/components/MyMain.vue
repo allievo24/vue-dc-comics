@@ -17,8 +17,10 @@
 </template>
 
 <script>
+
 export default {
     name:'MyMain'
+
 }
 </script>
 
@@ -28,12 +30,14 @@ export default {
         width: 100%;
         border: solid 2px red;
         display: flex;
-        background-color: $back_main_color ;
+        background:#0282F9 ;
     img{
         width: 100%;
         object-fit: contain;        
     }
+  
    } 
-   @import "./styles/var.scss"
-
+     
+     
+   
 </style>
