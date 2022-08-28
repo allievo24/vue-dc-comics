@@ -3,9 +3,9 @@
  <template>
   <footer>
     <div class="FooterTop">
-      <FooterLinks   :titolo="'DC CoMICS'" :comicslinks="comicslinks"  />
-      <FooterLinks   :titolo="'DC'" :DcLinks="DcLinks"/>
-
+      <FooterLinks   :titolo="'DC CoMICS'" :links="comicslinks"/>
+      <FooterLinks   :titolo="'DC'" :links="DcLinks" />
+:DcLinks="DcLinks"
 
     </div>
     <div class="FooterBottom">
@@ -20,7 +20,7 @@ import FooterLinks from './FooterLinks';
 export default {
   name: "MyFooter",
   components: {
-    FooterLinks,
+    FooterLinks
   },
 }
 </script>
