@@ -18,102 +18,19 @@ export default {
         titolo: String,
         links: Array,
     },
-    data() {
-    return {
-      comicslinks: [
-        {
-          text: "CHARACTERS",
-          url: "#",
-        },
-        {
-          text: "COMICS",
-          url: "#",
-        },
-        {
-          text: "MOVIES",
-          url: "#",
-        },
-        {
-          text: "TV",
-          url: "#",
-        },
-        {
-          text: "GAMES",
-          url: "#",
-        },
-        {
-          text: "COLLECTIBLES",
-          url: "#",
-        },
-        {
-          text: "VIDEOS",
-          url: "#",
-        },
-        {
-          text: "FANS",
-          url: "#",
-        },
-        {
-          text: "NEWS",
-          url: "#",
-        },
-      ],
- DcLinks: [
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-            {
-               text :"Termes of User",
-                url: "#",
-            },
-
-        ]
-
-
-
-
-    };
-  },
+   
 }
 </script>
 
 <style lang="scss">
-.linkfooter {
-  a {
-    text-decoration: none;
+   .linkfooter{
+       
+        border:solid 2px yellow;
+   }
+  li{
+    list-style: none;
+    margin: 10px 
   }
-}
+  
+
 </style>
