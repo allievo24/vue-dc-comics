@@ -20,8 +20,11 @@ export default {
     img{
         width: 100%;
         height: 100%;
-       // object-fit:inherit;
-       // object-position:50% 50%;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+ 
+       object-fit:fill;
+       object-position:50% 50%;
     }
    
     

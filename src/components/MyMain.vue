@@ -3,7 +3,7 @@
 <template>
     <section class="main">
        
-        <h1>My MAIN</h1>
+   
         <img src="@/assets/img/buy-comics-digital-comics.png" alt=""/>
         <img src="@/assets/img/buy-comics-merchandise.png" alt=""/>
         <img src="@/assets/img/buy-comics-subscriptions.png" alt=""/>

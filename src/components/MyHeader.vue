@@ -9,7 +9,6 @@
         </li>
       </ul>
     </nav>
-    <div class="Bottom">-->Content goes here --</div>
   </header>
 </template>
 
@@ -81,6 +80,7 @@ export default {
          border : 2px solid black;
          display: flex;
          align-items: center;
+         justify-content: space-between;
           
             
       ul{

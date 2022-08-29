@@ -1,8 +1,8 @@
 <template>
-     <section class="fumetti">
-       <div class="cont" v-for="(fumetto ,index) in Fumetti" :key="index">
+     <section class="cont">
+       <div class="fumetti" v-for="(fumetto ,index) in Fumetti" :key="index">
             <img :src="fumetto.thumb" alt="">
-            <h4>{{fumetto.type}}</h4>
+            <h4>{{fumetto.series}}</h4>
        </div>
      </section>
 </template>
@@ -19,23 +19,22 @@ export default {
 </script>
 
 <style lang="scss">
- .fumetti{
+ .cont{
     display: flex;
     flex-wrap: wrap;
-    border:solid 2px blue;
     background: black;
     img{
       width:100%;
-      border:solid 2px blue;
       margin:auto;
      
        
 
     }
-    .cont{
+    .fumetti{
         width:calc(100% / 6 - 1rem);
-        margin: auto;
-        border:solid 2px rgb(0, 255, 47);
+        margin: 2rem auto;
+        padding: 2rem , 2rem;
+        
        
 
     }

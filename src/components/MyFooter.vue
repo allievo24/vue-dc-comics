@@ -170,7 +170,6 @@ export default {
 
  <style lang="scss">
 footer {
-  border: solid 2px blue;
  
 
   a {
@@ -185,7 +184,6 @@ footer {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
-    border: solid 4px rgb(179, 13, 13);
   }
 }
 .FooterBottom {
