@@ -9,19 +9,21 @@
         <FooterLinks :titolo="'SITES'" :links="siteslinks" />
         <FooterLinks :titolo="'SHOP'" :links="shoplinks" />
       </div>
-        <img src="@/assets/img/dc-logo-bg.png" alt="" />
-      <div class="img">
-       
-      </div>
+      <img src="@/assets/img/dc-logo-bg.png" alt="" />
+      <div class="img"></div>
     </div>
 
     <div class="FooterBottom">
       <div class="botton">
-        <a href="#">SIGN-UP NOW</a>
+        <a href="#">SIGN-UP NOW!</a>
       </div>
       <div class="soscial">
-        <h4>FOLLOW</h4>
+        <h4>FOLLOW US</h4>
         <img src="@/assets/img/footer-facebook.png" alt="" />
+        <img src="@/assets/img/footer-twitter.png" alt="" />
+        <img src="@/assets/img/footer-youtube.png" alt="" />
+        <img src="@/assets/img/footer-pinterest.png" alt="" />
+        <img src="@/assets/img/footer-periscope.png" alt="" />
       </div>
     </div>
   </footer>
@@ -169,6 +171,7 @@ export default {
  <style lang="scss">
 footer {
   border: solid 2px blue;
+ 
 
   a {
     text-decoration: none;
@@ -186,29 +189,40 @@ footer {
   }
 }
 .FooterBottom {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #303030;
   border: solid 4px rgb(179, 13, 13);
-  a{
-   
-      border: solid 2px #0282F9;
-      padding: 0.5rem; 
-  
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    border: solid 2px #0282f9;
+    padding: 0.5rem;
+  }
+  .soscial {
+    display: flex;
+    img {
+      padding: 0rem 1rem;
+    }
+    h4 {
+      color: #0282f9;
+    }
   }
 }
 .FooterTop {
   display: flex;
   border: solid 2px rgb(68, 255, 0);
   background-image: url("@/assets/img/footer-bg.jpg");
-  //background-repeat: no-repeat;
-  //object-fit: cover;
-  
-    img {
-      width: 40%;
-      margin-left: 6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  //object-position: 50% 50%;
+  //object-fit:contain ;
+ 
 
-    }
-  
+  img {
+    width: 40%;
+    margin-left: 6rem;
+  }
 }
 </style>

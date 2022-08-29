@@ -2,11 +2,12 @@
 <!--creo il componente Main-->
 <template>
     <section class="main">
+       
         <h1>My MAIN</h1>
         <img src="@/assets/img/buy-comics-digital-comics.png" alt=""/>
         <img src="@/assets/img/buy-comics-merchandise.png" alt=""/>
-        <img src="@/assets/img/buy-comics-shop-locator.png" alt=""/>
         <img src="@/assets/img/buy-comics-subscriptions.png" alt=""/>
+        <img src="@/assets/img/buy-comics-shop-locator.png" alt=""/>
         <img src="@/assets/img/buy-dc-power-visa.svg" alt=""/>
 
 
@@ -24,12 +25,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style  lang="scss">
     .main{
         height: 80px;
         width: 100%;
         border: solid 2px red;
         display: flex;
+       
         background:#0282F9 ;
     img{
         width: 100%;

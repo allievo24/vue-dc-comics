@@ -80,9 +80,8 @@ export default {
     header{
          border : 2px solid black;
          display: flex;
-           align-items: center;
-           justify-content: space-between;
-           flex-wrap: wrap;
+         align-items: center;
+          
             
       ul{
         
@@ -95,6 +94,7 @@ export default {
         
         a{
           text-decoration: none;
+          color:black;
 
         }
           
